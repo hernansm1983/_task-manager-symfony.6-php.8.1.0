@@ -1,0 +1,182 @@
+body{
+    background-color: grey;
+}
+
+#header{
+    margin: 1em auto; 
+    max-width: 1000px; 
+    width: 100%; 
+    font: 18px/1.5 sans-serif;
+}
+
+#menu{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    width: 100%;
+    height: 50px;
+    background: #eee;
+    line-height: 50px;
+}
+
+#menu li{
+    display:block;
+    float:left;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-right: 1px solid #ccc;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+#menu li:hover{
+    background: #444;
+}
+
+#menu li:hover a{
+    color: white;
+}
+
+#menu a{
+    display: block;
+    color: #444;
+    text-decoration: none;
+    transition: all 500ms;
+}
+
+.clearfix{
+    float:none;
+    clear:both;
+}
+
+.example-wrapper { 
+    margin: 1em auto; 
+    max-width: 1000px; 
+    width: 100%; 
+    font: 18px/1.5 sans-serif; 
+}
+.example-wrapper code { 
+    background: #F5F5F5; 
+    padding: 2px 6px; 
+}
+
+label{
+    display: block;
+    width: 80%;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea,
+select{
+    width: 70%;
+    padding: 8px;
+    font-size: 10px;
+}
+
+textarea{
+    height: 80px;
+}
+
+select{
+    width: 73%;
+}
+
+button,
+    input[type="submit"]{
+        padding: 8px;
+        margin-top: 15px;
+        background: darkorange;
+        color: white;
+        border: 1px solid;
+        cursor: pointer;
+        transition: all 800ms;
+    }
+
+button:hover,
+    input[type="submit"]{
+        background: black;
+        color: white;
+    }
+    
+#submit_button{
+        padding: 8px;
+        margin-top: 15px;
+        background: darkorange;
+        color: white;
+        border: 1px solid;
+        cursor: pointer;
+        transition: all 800ms;
+    }
+
+#submit_button:hover{
+        background: black;
+        color: white;
+    }
+
+.right{
+    float: right !important;  
+    border-right: 0px;
+}
+
+table{
+    width: 100%;
+    border: 1px solid black;
+}
+
+table th,
+table td{
+    background: darkorange;
+    padding: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+}
+
+table td{
+    background: gainsboro;
+    
+}
+
+.buttons{
+    width: 28%;
+}
+
+.btn-view{
+    background: green;
+    text-decoration: none;
+    border: 1px solid #444;
+    padding: 10px;
+    color: white;
+}
+
+.btn-edit{
+    background: orange;
+    text-decoration: none;
+    border: 1px solid #444;
+    padding: 10px;
+    color: white;
+}
+
+.btn-delete{
+    text-decoration: none;
+    border: 1px solid #444;
+    padding: 10px;
+    color: white;
+    background: red;
+}
+
+.btn{
+    text-decoration: none;
+    border: 1px solid #444;
+    padding: 10px;
+    color: white;
+    background: #917553;
+}
+
+.data-task{
+    color: #ccc;
+}
