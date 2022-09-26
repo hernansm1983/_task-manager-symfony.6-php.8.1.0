@@ -14,7 +14,7 @@
     {% endif %}
     
     {% if app.user %}
-        {{ dump(app.user) }}
+        {{ app.user }} 
     {% endif %}
     
     <form action="{{ path('login') }}" method="POST">
