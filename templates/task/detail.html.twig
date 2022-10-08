@@ -21,7 +21,7 @@
                     {% endif %}
         | {{ task.hours }}hs |
         {% if task.state == 'no-asign' or task.state == '' %}
-                        {{ 'Sin Asignar' }}
+                        {{ 'Pendiente' }}
                     {% endif %}
                     
                     {% if task.state == 'in-course' %}

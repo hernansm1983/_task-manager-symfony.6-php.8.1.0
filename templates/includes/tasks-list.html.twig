@@ -1,32 +1,36 @@
-{% if tasks|length >= 1 %}
+{% if tasks|length >= 1  %}
+
 <table>
     <tr>
+        <th>Id</th>
         <th>Tarea</th>
         <th>Prioridad</th>
         <th>Horas Presupuestadas</th>
         <th>Estado</th>
+        <th>Asignada a</th>
         <th>Acciones</th>
     </tr>
     {% for task in tasks %}
         <tr>
+            <td><b>{{ task.id }}</b></td>
             <td>{{ task.title }}</td>
             <td>
                 {% if task.priority == 'high' %}
-                    {{ 'Alta' }}
+                    {{ '<strong class="prioridad_alta">Alta</strong>' }}
                 {% endif %}
 
                 {% if task.priority == 'medium' %}
-                    {{ 'Media' }}
+                    {{ '<strong class="prioridad_media">Media</strong>' }}
                 {% endif %}
 
                 {% if task.priority == 'low' %}
-                    {{ 'Baja' }}
+                    {{ '<strong class="prioridad_baja">Baja</strong>' }}
                 {% endif %}
             </td>
             <td>{{ task.hours }}</td>
             <td>
                 {% if task.state == 'no-asign' or task.state == '' %}
-                    {{ 'Sin Asignar' }}
+                    {{ 'Pendiente' }}
                 {% endif %}
 
                 {% if task.state == 'in-course' %}
@@ -36,6 +40,9 @@
                 {% if task.state == 'finished' %}
                     {{ 'Finalizada' }}
                 {% endif %}
+            </td>
+            <td>
+                {{ task.user.surname }}, {{ task.user.name }}
             </td>
             <td class="buttons">
                 <a href="{{ path('task_detail', {'id':task.id}) }}" class="btn-view">Ver</a>

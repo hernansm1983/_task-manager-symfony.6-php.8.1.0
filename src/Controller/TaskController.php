@@ -19,6 +19,7 @@ class TaskController extends AbstractController
         //---prueba de entidades y relaciones Task---
         $task_repo = $doctrine->getRepository(Task::class);
         $tasks = $task_repo->findBy([], ['id' => 'DESC']); //--- Trae todas las tareas ordenadas de forma Descendente
+        //var_dump($tasks);
         /*
         foreach($tasks as $task){
             echo $task->getTitle()." - ".$task->getUser()->getEmail()."</br>";

@@ -31,7 +31,7 @@ class TaskType extends AbstractType{
                 ->add('state', ChoiceType::class, array(
                     'label' => 'Estado',
                     'choices' => array(
-                        'Sin Asignar' => 'no-asign',
+                        'Pendiente' => 'no-asign',
                         'En Curso' => 'in-course',
                         'Finalizada' => 'finished'
                     )

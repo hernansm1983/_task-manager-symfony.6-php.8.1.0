@@ -137,8 +137,20 @@ table td{
 }
 
 table td{
-    background: gainsboro;
+    background: rgba(220, 220, 220, 0.774);
     
+}
+
+.prioridad_alta{
+    color: red;
+}
+
+.prioridad_media{
+    color: rgb(255, 217, 0);
+}
+
+.prioridad_baja{
+    color:green;
 }
 
 .buttons{
